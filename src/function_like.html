@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Shopping like function Amy</title>
+<link rel="stylesheet" href="scss/function_like.css">
+<script type="text/javascript" src="js/movie_data.js"></script>
+<script type="text/javascript" src="js/function_like.js"></script>
+</head>
+<body>
+	<div id="top_part" class="container" style="height: 50px; background-color: rgb(140, 208, 227);">
+		<div id="user_info">
+			<p>Name:&nbsp;<span id="get_name_info"></span><span id="show_movie_list">Movie List</span>
+				&nbsp;&nbsp;&nbsp;&nbsp;<span id="show_liked_list">Liked List<sup id="list_number">1</sup></span></p>
+			<!-- <p>Liked List<sup><span id="list number"><span></sup></p> -->
+		</div>
+		<!-- <div id="user_picture">
+			<img src="images/user_page2.png">
+		</div> -->
+	</div>
+	<hr>
+	
+	<div class="second_part container">
+		<div id="like_button" title="Choose to see the like list">
+			
+				<h3>Top Popular Movies</h3>
+				<p>Like List</p>
+				<img id="like_icon" src="images/like.png">
+			
+			<!-- <p>Like List</p>
+			<img id="like_icon" src="images/like.png"> -->
+		</div>
+		<div id="main_part">
+		</div>
+	</div>
+	
+	<div class="second_part_lists container">
+		<h2>Liked list</h2>
+		<img src="images/settings_drag.png" id="second_part_lists_icon" title ="Customize your liked list">
+		<!-- <p>Customize your liked list</p> -->
+		<div id="liked_list">	
+		</div>
+		
+	</div>
+	
+	<div class="second_part_drag container">
+		<div>
+			<input type="button" value="Close" id="close" title="click to see the front image">
+		</div>
+		<table id="second_part_drag_table">
+			<caption>Drag and Drop</caption>
+			<tbody id="second_part_drag_table_body"></tbody>
+		</table>
+		
+	</div>
+	
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<!-- <script src="js/bootstrap.min.js" crossorigin="anonymous"></script> -->
+
+</body>
+</html>

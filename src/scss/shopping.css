@@ -1,0 +1,449 @@
+
+* {
+	box-sizing: border-box;
+	font-family: Times New Roman;
+	color: #383838;
+}
+
+*,
+*::before,
+*::after {
+    outline: none;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 10px;
+}
+
+.adver {
+	background-color:rgb(54,54,54);
+	color: white;
+	text-align:center;
+	font-size: 12px;
+	padding: 1px;	
+}
+
+header {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 1;
+} 
+
+/* navigation bar*/
+a {
+	color:#000000; 
+	text-decoration: none;
+	font-size: 12px;
+}
+
+/* To make several divs to display in row  using three flexbox*/
+.navigation_bar {
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+	padding-left: 35px;
+	padding-right: 35px; 
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 16px;
+}
+
+/*display navigation bar in right direction and format*/
+div.left-bar {
+	display: flex;
+	width: 70%;
+	/* justify-content: flex-start; */
+	align-items: center;	
+}
+
+/* display navigation bar in left direction and format */
+div.right-bar {
+	display: flex;
+	width: 30%;
+	justify-content: flex-end;
+	align-items: center;	
+}
+
+div.left-bar > div, div.right-bar > div {
+	cursor: pointer;
+	padding: 15px;
+}
+
+div.left-bar > div a, div.right-bar > div a {
+	position: relative;
+}
+
+.icon {
+	cursor: pointer;
+}
+
+/* .btn:hover {
+	background-image: url("../images/line-clay-bg.svg");
+	background-repeat: repeat-x;
+	background-position: bottom;
+	
+    padding: 5px; 	
+    position: relative;
+    top: 10px;
+    width: 100%;
+    padding: 5px; 
+} */
+
+.navigation_bar .dropdown a::after {
+	content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background:url ("../images/line-clay-bg.svg") left bottom repeat-x;
+    opacity: 0;
+	/* background-image:url ("../images/line-clay-bg.svg");
+	background-position-x: left;
+	background-position-y: bottom;
+	background-repeat: repeat-x;	 */
+}
+
+div.dropdown:hover a::after {
+	opacity: 1;
+} 
+
+/* to adjust the distance between search and cart icons */
+.function {
+	margin-left: 10px;
+}
+/* navigation bar dropdown */
+
+.dropdown-content {
+	display: none;
+	position: fixed;
+	left: 15px;
+	right: 15px;
+	max-height: 300px;
+	top:88px; 
+	background-image: url("../images/dropdown_bg.jpg");
+	background-repeat: repeat;
+	background-position: center;
+}
+
+/* adjust the  size of dropdown images */
+.dropdown_images {
+	width: 300px;
+	height: 300px;
+	padding: 10px; 
+} 
+
+/* how the divs will be displayed in the dropdown area */
+/* .dropdown-content div {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	text-align:center; 
+} */
+
+div.dropdown_container {
+	display: flex; 
+	justify-content: center;	 
+	padding: 0px; 
+}
+
+/* if mouse hover in this icon, display the dropdown area*/
+ div.dropdown:hover div.dropdown-content {
+	display: block;	
+} 
+
+/* modify the text style in dropdown content*/
+ul {
+	list-style-type: none;
+	margin:0px;
+} 
+
+li h4 {
+	margin: 0px;
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+ul li {
+	/* padding: 10px;	 */
+	margin-bottom: 16px;
+	margin-top: 16px;
+	font-size: 13px;
+} 
+
+ul li:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+li.addStrong {
+	padding: 0px;
+	margin: 0px;
+}
+
+li.addBold{
+	font-weight: bold;
+}
+
+.fixed {
+	/* position: absolute;
+	top: 100px;
+	right: 10px;
+	left: 10px; */
+	
+	/* width: 900px; */
+	/* background-image: url("images/summer_shopping_2.jpg"); */
+	/* background-size: 100% 100%; */
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-top: 90px;
+}
+
+h2 {
+	display: block;
+	text-align: center;
+	margin: 0px;
+    font-family: cursive;
+	font-size: 30px;
+	margin-bottom: 16px;
+}
+
+
+.images_display {
+	margin-right: 20px;
+	margin-left: 20px;
+	position: relative;
+	height: 2145px;
+}
+
+#picture1 {
+	position: absolute;
+	width:66%;
+	left:0;
+	top:0;
+	padding: 15px;
+	height: 625px;
+	background-image: url("../images/sea.jpg");
+	background-size: 100% 100%;
+}
+#picture2 {
+	position: absolute;
+	right: 0;
+	top: 0px;
+	padding: 15px;
+	left: 68%;	
+	height: 875px;
+	width: 32%;
+	
+	background-image: url("../images/cars.jpg");
+	background-size: 100% 100%;
+	
+}
+#picture3 {
+	position: absolute;
+	left:0;
+	top: 635px;
+	width: 32%;
+	height: 625px;
+	padding: 15px;
+	background-image: url("../images/guns.jpg");
+	background-size: 100% 100%;
+}
+
+#picture4 {
+	position: absolute;
+	left:34%;
+	top: 635px;
+	height: 875px;
+	width: 32%;
+	padding: 15px;
+	background-image: url("../images/jocker.jpg");
+	background-size: 100% 100%;
+	
+}
+#picture5 {
+	position: absolute;
+	left: 68%;
+	top: 885px;
+	height: 625px;
+	right: 0;
+	width: 32%;
+	padding: 15px;
+	background-image: url("../images/games.jpg");
+	background-size: 100% 100%;
+}
+#picture6 {
+	position: absolute;
+	top: 1270px;
+	left: 0;
+	width: 32%;
+	height: 875px;
+	padding: 15px;
+	background-image: url("../images/tiffany_tiffany_and_co_ring_jewel_104485_720x1280.jpg");
+	background-size: 100% 100%;	
+	
+}
+#picture7 {
+	position: absolute;
+	top: 1520px;
+	right: 0;
+	left: 34%;
+	width: 66%;
+	height: 625px;
+	padding: 15px;
+	background-image: url("../images/steak.jpg");
+	background-size: 100% 100%;
+}
+
+/* transparent the section*/
+
+div.blank_div {
+	display: none;
+	padding: 20px; 
+	/* background-size: cover; 
+	background-position: center; */ 
+	height: 100%;
+	width: 100%;
+	background-color: #f9f9f9;
+	justify-content: space-around; 
+	opacity:0.8;
+} 
+
+
+
+/* For every picture, if mouse hover, add another picture */
+ .images:hover div.blank_div {
+ 	display: block;
+ }
+ 
+ .images:hover div.mixed {
+   	position: absolute;
+ 	left: 15%;
+ 	top: 10%; 
+ 	width: 70%; 
+ 	display: block;	
+ } 
+ 
+ .images:hover div.amc {
+    position: absolute;
+ 	left: 10%;
+ 	top: 30%;
+ 	width: 80%;
+ 	/* height: 64%;    */
+ 	display: block;	
+ }
+ 
+ .images:hover img.image_front {
+ 	padding:15px;
+ 	padding-bottom: 0px;
+ 	display: block;
+ 	width: 100%;
+ 	height: 100%; 
+ }
+ 
+ .images:hover div.text_container {
+	text-align: center;
+	margin: 0px;
+	padding: 0px;	
+ }
+ 
+ /* to set the font format for every image description */
+  p.first_line {
+  	font-family: cursive;
+	font-weight: bold;
+	font-size: 16px;
+	padding:0px;
+	margin: 5px;
+  }
+  p.second_line {
+	font-family: cursive;
+	font-weight: bold;
+	font-size: 12px;
+	padding:0px;
+	margin: 5px;
+  } 
+ 
+/* set top scroll*/
+div.radius {
+	width: 24px;
+	height: 24px;
+	border-radius: 12px;
+	background-color: black;
+	border: solid 1px;
+}
+#top_button {
+	text-align: center;
+	line-height: 23px;
+	font-size: 12px;
+	color: white;
+}
+
+#top {
+	position: fixed;
+	top: 84%;
+	left: 96%;
+}
+
+/* set footer section */
+footer {
+	background-color:rgb(54,54,54);
+	color: white;
+	text-align:center;
+	font-size: 12px;
+	padding: 1px;
+	margin-top: 20px;	
+}
+
+ .footer_text:hover  {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.footer_text:active {
+	text-decoration: none;
+}
+
+/* div.type1 {
+	display: none;	
+	position: relative;
+	width:96%;
+	height:94%;
+	top: 3%;
+	left: 2%;
+	background-color: #f9f9f9; 
+	opacity:0.8;
+}
+
+
+div.type2 {
+	display: none;	
+	position: relative;
+	width:94%;
+	height:96%;
+	top: 2%;
+	left:3%;
+	background-color: #f9f9f9; 
+	opacity:0.8;
+}
+
+div.type3 {
+	display: none;	
+	position: relative;
+	width:94%;
+	height:96%;
+	top: 2%;
+	left:3%;
+	background-color: #f9f9f9; 
+	opacity:0.8;
+} */
+
+/* add a bold line to every navigation bar */
+ /* .btn:hover {
+	background-image: url("../images/line-clay-bg.svg");
+	background-repeat: repeat-x;
+    background-position: bottom;
+    padding: 5px; 	
+ }  */

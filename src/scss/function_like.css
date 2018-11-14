@@ -1,0 +1,197 @@
+* {
+	box-sizing: border-box;	
+}
+
+body {
+	margin: 5px;
+	padding: 0px; 
+}
+
+#top_part {
+	position: relative;  
+	height: 50px;
+	width: 100%;
+	background-color: rgb(140, 208, 227); 
+}
+
+hr {
+	border-color: pink;
+	border-width: 2px;
+	position: relative;
+	margin: 0px;
+}
+
+#user_info {
+	position: absolute;
+	top: 0px;
+	left: 20px;	
+	margin: 0px;
+	text-align: center;
+}
+
+#user_info p{
+	color: white;
+	/* font-size: 15px; */
+}
+
+
+#get_name_info {
+	/* font-size: 15px; */
+	font-family: 'Archer A','Archer B';
+	padding: 5px;
+	padding-left: 0px;
+	padding-right: 10px;
+	color: white;
+	margin: 0px;
+	/* background-color: pink; */
+	/* background-color: rgb(140, 208, 227); */
+	/* border: 1px solid pink; */
+}
+
+#show_movie_list {
+	text-decoration: underline;
+	text-decoration-color: plum;
+}
+
+#show_liked_list {
+	/* text-decoration:underline; */
+	text-decoration-color: plum;
+}
+
+#list_number {
+	border: 1px solid red;
+	padding: 1px;
+	margin: 5px;
+	display: none; 
+}
+
+#user_picture {
+	position: absolute;
+	top: 50px;
+	right: 100px;
+}
+
+#main_part {
+	margin-top: 20px;
+	padding-top: 20px;
+	padding-left: 10px;
+	/* text-align: center; */
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap; 
+}
+
+div.second_part {
+	width: 100%;
+	border: 2px solid rgb(140, 208, 227);  
+	margin-top: 5px;
+	margin-bottom: 5px; 
+	display: block;
+}
+
+#like_button {
+	position: absolute;
+	top: 80px;
+	width: 100%;
+	margin-top: 10px;
+	padding: 15px;
+	padding-top: 0px; 
+	cursor: pointer;	
+}
+
+#like_button h3 {
+	margin: 0px;
+	/* margin-top: 10px;
+	position: absolute;
+	top: 0px;
+	left: 20px; */
+	color: rgb(140, 208, 227);
+	font-size: 30px;
+}
+
+#like_button p {
+	position: absolute;
+	top: 8px;
+	right: 20px;
+	margin: 0px;	
+} 
+
+#like_button img {
+	position: absolute;
+	top: 25px;
+	right: 40px;
+	margin-bottom: 0px;
+}
+
+div.second_part_lists {
+	position: absolute;
+	top: 60px;
+	width: 100%;
+	left: 0px;
+	margin: 5px;
+	display: none;	
+	/* border: 2px solid rgb(140, 208, 227); */
+}
+
+#liked_list {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px;
+	padding-top: 0px;
+	height: 100%;
+	text-align: center; 
+	width: 100%;
+}
+
+.second_part_lists h2 {
+	color: tomato;
+	text-align: center;
+	margin: 10px;
+}
+.second_part_lists img {
+	cursor: pointer;
+}
+
+#second_part_lists_icon {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	margin-right: 10px;
+}
+
+div.second_part_drag {
+	position: absolute;
+	top: 60px;
+	/* left: 30%; */
+	width: 100%;
+	padding: 20px;
+	display: none;
+	text-align: center;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-right: 20px;
+	box-align: center;
+	margin: auto;
+	width: 40%;
+}
+
+table caption {
+	color: tomato;
+	font-size: 30px;
+	padding: 15px;
+}
+
+table td {
+	border-collapse: collapse;
+}
+
+#close {
+	position: absolute;
+	top: 60px;
+	right: 20px;
+	border: 1px solid pink;
+	cursor:pointer;
+}

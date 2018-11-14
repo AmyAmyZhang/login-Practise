@@ -1,0 +1,209 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Shopping web Amy</title>
+		<link rel="stylesheet" href="scss/shopping.css"/>
+		<link rel="stylesheet" href="scss/sign_in.css"/>
+		<script type="text/javascript" src="js/sign_in.js"></script>
+	</head>
+	<body>
+		<!-- header section -->
+			<header>
+				<div class="adver">
+					<p>Free U.S. Standard Shipping on orders of $&nbsp;100+</p>
+				</div>
+				
+				<nav class="navigation_bar">
+				<div class="left-bar">
+					<img src="images/Cream_Soda_sprite_001.png" height="25" width="23" class="icon">
+					<div class="dropdown"><a class="btn">NEW ARRIVALS</a></div>
+					<div class="dropdown">
+							<a class="btn" href="">BAGS</a>
+							<div class="dropdown-content">
+								<div class="dropdown_container">
+									<ul class="dropdown_text">
+										<li class="addStrong"><h4>GET INSPIRED</h4></li>
+										<li>Travel Lookbook</li>
+										<li>Mild X Wild</li>
+										<li>Styled By You</li>
+									</ul>
+									<ul class="dropdown_text">
+										<li class="addStrong"><h4>STYLES</h4></li>
+										<li>Travel Bags</li>
+										<li>Crossbody Bags</li>
+										<li>Clutches and Pouches</li>
+										<li class="addBold">Sale</li>
+									</ul>
+									<img src="images/dropdown_image_1.webp" alt="dropdown_image_1" class="dropdown_images">
+								</div>
+							</div>								
+					</div>
+					
+					<div class="dropdown">
+						<a class="btn" href="">ACCESSORIES</a>
+							<div class="dropdown-content">
+								<div class="dropdown_container">
+									<ul class="dropdown_text">
+										<li>Iron-On Patches</li>
+										<li>Tassels</li>
+										<li>Add-ons</li>
+										<li>Jewelry</li>
+										<li>Home</li>
+										<li class="addBold">Sale</li>
+									</ul>
+									<img src="images/dropdown_image_2.webp" alt="dropdown_image_2" class="dropdown_images">	
+								</div>
+							</div>
+					</div>
+					
+					<div class="dropdown">
+						<a class="btn" href="">EXPERIENCES</a>
+						<div class="dropdown-content">
+								<div class="dropdown_container">
+									<img src="images/dropdown_image_3.webp" alt="dropdown_image_3" class="dropdown_images">
+									<img src="images/dropdown_image_4.webp" alt="dropdown_image_4" class="dropdown_images">
+								</div>
+						</div>
+					</div>
+					<div class="dropdown"><a class="btn" href="">ABOUT</a></div>
+					<div class="dropdown">
+						<a class="btn" href="">SUMMAR&nbsp;SALE</a>
+							<div class="dropdown-content">
+									<div class="dropdown_container">
+										<img src="images/summer_shopping.jpg" alt="summer_shopping" class="dropdown_images">
+										<img src="images/shopping.jpg" alt="summer_shopping_2" class="dropdown_images">
+									</div>
+							</div>
+					</div>	
+				</div>
+				<div class="right-bar">
+					<img id="setting">
+					<a class="icon btn" id="sign_in" href="#">SIGN IN</a>
+					<img src="images/search-icon.png" height="25" width="23" class="function icon">
+				    <img src="images/shopping_bag_icon.png" height="25" width="23" class="function icon">
+					
+				</div>
+			</nav>
+		</header>
+		
+		<div class="fixed">
+			<form class="sign_in_form" id="sign_in_form_id" method="get" >
+				<h3>Sign In</h3>
+				<p>Welcome you are back!</p>
+				<div class="form-field form-field--error">
+					<input class="form-input" placeholder="Username:" name="login_username" id="login_username" type="text">
+					<span id="user_msg">User name must contain 8 none digits</span>
+				</div>
+				<div class="form-field">
+					<input class="form-input" placeholder="Password:" name="login_pwd" id="login_pwd" type="password">
+					<span id="pwd_msg">Password must contain at least 1 number, 1 capital letter, 1 lowercase letter</span>
+				</div>
+				<div class="form-actions">
+					<input type="button" class="button" value="Sign in" id="submit">
+					<a style="cursor: pointer;">Forgot your password?</a>
+				</div>
+			</form>
+			<img src="images/summer_shopping_2.jpg" width="100%" alt="shopping">
+			</div>
+			
+		<h2>See what else is new?</h2>
+		<div class="images_display">
+			<div class="images" id="picture1">
+				<div class="blank_div type1">
+					<div class="mixed">
+						<img src="images/island.jpg"  alt="island" class="image_front">
+						<div class="text_container">
+							<p class="first_line">What to buy an island?</p>
+							<p class="second_line">This 'heart' is for you...</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="images"  id="picture2" >
+				<div class="blank_div type2">
+					<div class="mixed">
+						<img src="images/dodge.jpg"  alt="dodge"  class="image_front">
+						<div class="text_container">
+							<p class="first_line">VIPER</p>
+							<p class="second_line">Speed of the light...</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="images" id="picture3" >
+				<div class="blank_div type3">
+					<div class="mixed">
+						<img src="images/rifle.jpg" alt="rifle"  class="image_front">
+						<div class="text_container">
+							<p class="first_line">Wanna shoot something</p>
+							<p class="second_line">Coming here...</p>
+						</div>	
+					</div>
+				</div>	
+			</div>
+			
+			<div class="images" id="picture4" >
+				<div class="blank_div type2">
+					<div class="mixed amc">
+						<img src="images/amc.png" alt="amc"  class="image_front">
+						<div class="text_container">
+							<p class="first_line">Wanner a movie!</p>
+							<p class="second_line">Ticketing now...</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="images" id="picture5" >
+				<div class="blank_div type3">
+					<div class="mixed">
+						<img src="images/switch.jpg" alt="switch"  class="image_front">
+						<div class="text_container">
+							<p class="first_line">Game all day</p>
+							<p class="second_line">(Playing)...</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="images" id="picture6">
+				<div class="blank_div type2">
+					<div class="mixed">
+						<img src="images/tiffany_111.jpg" alt="tiffany"  class="image_front">
+						<div class="text_container">
+							<p class="first_line">Nothing but SHINNING</p>
+							<p class="second_line">Get yours now...</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="images" id="picture7" >
+				<div class="blank_div type1">
+					<div class="mixed">
+						<img src="images/restraurant.jpeg" alt="restaurant"  class="image_front">
+						<div class="text_container">
+							<p class="first_line">Best Steak Ever!</p>
+							<p class="second_line">Make reservation now...</p>
+						</div>
+					</div>
+				</div>	
+			</div>		
+		</div>
+
+		<!-- add top bar -->
+		<div id="top">
+			<div class="radius"><a href="#"  id="top_button">TOP</a></div>
+		</div>
+			<footer>
+				<div>
+				<p class="footer_text">PRIVACY POLICY</p>
+				</div>
+			</footer>	
+	
+	</body>
+	
+</html>
